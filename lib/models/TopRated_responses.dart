@@ -1,17 +1,17 @@
-class POPULAR {
+class TOPRATED {
   int? page;
-  List<Results>? results;
+  List<TOPResults>? results;
   int? totalPages;
   int? totalResults;
 
-  POPULAR({this.page, this.results, this.totalPages, this.totalResults});
+  TOPRATED({this.page, this.results, this.totalPages, this.totalResults});
 
-  POPULAR.fromJson(Map<String, dynamic> json) {
+  TOPRATED.fromJson(Map<String, dynamic> json) {
     page = json['page'];
     if (json['results'] != null) {
-      results = <Results>[];
+      results = <TOPResults>[];
       json['results'].forEach((v) {
-        results!.add(new Results.fromJson(v));
+        results!.add(new TOPResults.fromJson(v));
       });
     }
     totalPages = json['total_pages'];
@@ -29,8 +29,7 @@ class POPULAR {
     return data;
   }
 }
-
-class Results {
+class TOPResults {
   bool? adult;
   String? backdropPath;
   List<int>? genreIds;
@@ -43,11 +42,11 @@ class Results {
   String? releaseDate;
   String? title;
   bool? video;
-  double? voteAverage;
+  dynamic voteAverage;
   int? voteCount;
 
-  Results(
-      {this.adult,
+  TOPResults(
+  {this.adult,
         this.backdropPath,
         this.genreIds,
         this.id,
@@ -62,7 +61,7 @@ class Results {
         this.voteAverage,
         this.voteCount});
 
-  Results.fromJson(Map<String, dynamic> json) {
+  TOPResults.fromJson(Map<String, dynamic> json) {
     adult = json['adult'];
     backdropPath = json['backdrop_path'];
     genreIds = json['genre_ids'].cast<int>();
