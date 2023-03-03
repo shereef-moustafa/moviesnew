@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "306206077480",
+    "project_id": "moviewatching-list",
+    "storage_bucket": "moviewatching-list.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306206077480:android:fd8b703cb5548a7c33fb1d",
+        "android_client_info": {
+          "package_name": "com.example.moviesnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306206077480-s16bkrmk18cmucdjngorsu7p7ck4usiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXqrCACG8dx8j9dHU_uGIP7PF5R84MsBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306206077480-s16bkrmk18cmucdjngorsu7p7ck4usiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
